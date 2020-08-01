@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Мій ліцей - ДЛ1</string>
+    <string name="title_activity_schedule">Розклад</string>
+    <string name="tab_text_1">ПН</string>
+    <string name="tab_text_2">ВТ</string>
+    <string name="tab_text_3">СР</string>
+    <string name="tab_text_4">ЧТ</string>
+    <string name="tab_text_5">ПТ</string>
+</resources>

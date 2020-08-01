@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.dnl1.myliceum.NewsFragment"
+        android:label="Новини"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+
+            <argument
+                android:name="selected_news_id"
+                app:argType="integer"
+                />
+    </fragment>
+    <fragment
+        android:id="@+id/studentScheduleFragment"
+        android:name="com.dnl1.myliceum.StudentScheduleFragment"
+        android:label="Розклад учнів"
+        tools:layout="@layout/fragment_student_schedule" >
+        <action
+            android:id="@+id/action_studentScheduleFragment_to_scheduleActivity"
+            app:destination="@id/scheduleActivity" />
+
+            <argument
+                android:name="schedule_type"
+                app:argType="string"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/teachersScheduleFragment"
+        android:name="com.dnl1.myliceum.TeachersScheduleFragment"
+        android:label="Розклад вчителів"
+        tools:layout="@layout/fragment_teachers_schedule" />
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.dnl1.myliceum.NewsDetailFragment"
+        android:label="Перегляд новини"
+        tools:layout="@layout/fragment_news_detail"
+
+        />
+    <activity
+        android:id="@+id/scheduleActivity"
+        android:name="com.dnl1.myliceum.ScheduleActivity"
+        android:label="activity_schedule"
+        tools:layout="@layout/activity_schedule" />
+</navigation>
