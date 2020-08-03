@@ -68,18 +68,6 @@ class ScheduleFragment : Fragment() {
         }
         else
         {
-            webView.webViewClient = object : WebViewClient()
-            {
-
-                override fun onReceivedSslError(
-                    view: WebView?,
-                    handler: SslErrorHandler?,
-                    error: SslError?
-                ) {
-                    handler!!.proceed()
-                }
-
-            }
 
             if(scheduleType == "students_schedule")
             {

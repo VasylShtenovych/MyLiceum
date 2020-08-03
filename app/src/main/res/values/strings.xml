@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Мій ліцей - ДЛ1</string>
+    <string name="app_name">Мій ліцей</string>
     <string name="title_activity_schedule">Розклад</string>
     <string name="tab_text_1">ПН</string>
     <string name="tab_text_2">ВТ</string>
